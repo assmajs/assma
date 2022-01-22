@@ -1,0 +1,26 @@
+{
+	"name": "@assma/compiler",
+	"displayName": "Assma Compiler",
+	"version": "1.0.0-alpha",
+	"description": "A template compiler module for Assma.",
+	"keywords": [
+		"assma",
+		"compiler"
+	],
+	"types": "types/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/assmajs/assma.git",
+		"directory": "packages/compiler"
+	},
+	"author": "Sayf Essyd",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/assmajs/assma/issues"
+	},
+	"homepage": "https://github.com/assmajs/assma/tree/master/packages/compiler#readme",
+	"peerDependencies": {},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	}
+}

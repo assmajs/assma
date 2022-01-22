@@ -1,0 +1,58 @@
+name: GPR Publish
+
+# Triggers the workflow on push or pull request events but only for tags
+on:
+  push:
+    branches: [refs/tags/*]
+  pull_request:
+    branches: [refs/tags/*]
+
+# This workflow contains a single job called "publish"
+jobs:
+  publish:
+    name: Publish
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out the repository under $GITHUB_WORKSPACE, so the job can access it
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Git Identity
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: "https://npm.pkg.github.com"
+
+      - name: Cache node_modules
+        id: cache-task-ref
+        env:
+          cache-name: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install Dependencies
+        if: steps.cache-task-ref.outputs.cache-hit != 'true'
+        run: yarn install
+
+      - name: Build Project
+        run: yarn build
+
+      - name: Publish
+        run: yarn publish:all
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GPR_TOKEN }}

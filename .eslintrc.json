@@ -1,0 +1,80 @@
+{
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"jest": true,
+		"es2021": true
+	},
+	"ignorePatterns": [
+		"jest.config.js",
+		"scripts/*"
+	],
+	"rules": {
+		"arrow-parens": [
+			"error",
+			"as-needed"
+		],
+		"comma-dangle": [
+			"error",
+			"never"
+		],
+		"constructor-super": "error",
+		"dot-notation": "error",
+		"eqeqeq": "off",
+		"no-case-declarations": "error",
+		"no-class-assign": "error",
+		"no-compare-neg-zero": "error",
+		"no-cond-assign": "error",
+		"no-const-assign": "error",
+		"no-constant-condition": [
+			"error",
+			{
+				"checkLoops": false
+			}
+		],
+		"no-control-regex": "error",
+		"no-debugger": "error",
+		"no-delete-var": "error",
+		"no-dupe-args": "error",
+		"no-dupe-class-members": "error",
+		"no-dupe-keys": "error",
+		"no-duplicate-case": "error",
+		"no-empty-character-class": "error",
+		"no-empty-pattern": "error",
+		"no-empty": "error",
+		"no-ex-assign": "error",
+		"no-extra-boolean-cast": "error",
+		"no-extra-semi": "error",
+		"no-func-assign": "off",
+		"no-global-assign": "error",
+		"no-inner-declarations": "error",
+		"no-invalid-regexp": "error",
+		"no-irregular-whitespace": "error",
+		"no-mixed-spaces-and-tabs": "error",
+		"no-new-symbol": "error",
+		"no-obj-calls": "error",
+		"no-octal": "error",
+		"no-redeclare": "error",
+		"no-regex-spaces": "error",
+		"no-self-assign": "error",
+		"no-sparse-arrays": "error",
+		"no-this-before-super": "error",
+		"no-undef": "error",
+		"no-unexpected-multiline": "error",
+		"no-unsafe-finally": "error",
+		"no-unsafe-negation": "error",
+		"no-unused-labels": "error",
+		"no-unused-vars": "error",
+		"no-useless-escape": "error",
+		"object-shorthand": "error",
+		"prefer-const": "error",
+		"require-yield": "error",
+		"semi": "error",
+		"use-isnan": "error",
+		"valid-typeof": "error"
+	}
+}

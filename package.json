@@ -1,0 +1,42 @@
+{
+	"name": "assma",
+	"version": "1.0.0-alpha",
+	"description": "A minimal JavaScript framework designed for educational purposes.",
+	"homepage": "https://github.com/assmajs/assma#readme",
+	"bugs": "https://github.com/assmajs/assma/issues",
+	"license": "MIT",
+	"engines": {
+		"node": ">=10.15.0",
+		"yarn": ">=1.12.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/assmajs/assma.git"
+	},
+	"eslintConfig": {
+		"root": true
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
+	"scripts": {
+		"build": "node scripts/build.js",
+		"test:unit": "jest"
+	},
+	"author": "Sayf Essyd",
+	"devDependencies": {
+		"rollup": "^2.62.0",
+		"@rollup/plugin-babel": "^5.3.0",
+		"@rollup/plugin-eslint": "^8.0.1",
+		"@babel/cli": "^7.16.7",
+		"@babel/core": "^7.16.7",
+		"@babel/node": "^7.16.7",
+		"@babel/preset-env": "^7.16.7",
+		"@babel/plugin-proposal-class-properties": "^7.16.7",
+		"@babel/eslint-parser": "^7.16.5",
+		"jest": "^27.4.5",
+		"uglify-js": "^3.14.5",
+		"gzip-size": "^6.0.0"
+	},
+	"dependencies": {}
+}
