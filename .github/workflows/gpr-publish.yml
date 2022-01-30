@@ -2,10 +2,12 @@ name: GPR Publish
 
 # Triggers the workflow on push or pull request events but only for tags
 on:
-  push:
-    branches: [refs/tags/*]
-  pull_request:
-    branches: [refs/tags/*]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish'
+        required: true
+        default: '1.0.0-alpha'
 
 # This workflow contains a single job called "publish"
 jobs:
@@ -24,13 +26,10 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GPR_REPO_GITHUB_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v2
-        with:
-          node-version: 14
-          registry-url: "https://npm.pkg.github.com"
 
       - name: Cache node_modules
         id: cache-task-ref
@@ -53,6 +52,10 @@ jobs:
         run: yarn build
 
       - name: Publish
-        run: yarn publish:all
+        run: |
+          echo "registry=https://npm.pkg.github.com/" > ~/.npmrc
+          echo "@assmajs:registry=https://npm.pkg.github.com/" >> ~/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GPR_REPO_GITHUB_TOKEN }}" >> ~/.npmrc
+          yarn publish packages/compiler --new-version ${ASSMA_VERSION}
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GPR_TOKEN }}
+          ASSMA_VERSION: ${{ github.event.inputs.version }}

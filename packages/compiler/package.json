@@ -1,5 +1,5 @@
 {
-	"name": "@assma/compiler",
+	"name": "@assmajs/compiler",
 	"displayName": "Assma Compiler",
 	"version": "1.0.0-alpha",
 	"description": "A template compiler module for Assma.",
@@ -21,6 +21,6 @@
 	"homepage": "https://github.com/assmajs/assma/tree/master/packages/compiler#readme",
 	"peerDependencies": {},
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com"
+		"@assmajs:registry": "https://npm.pkg.github.com"
 	}
 }

@@ -5,11 +5,11 @@ This package is used to compile Assma's template string into a virtual dom tree.
 ## Installation
 
 ``` bash
-npm install @assma/compiler
+npm install @assmajs/compiler
 ```
 
 ``` js
-import { compile } from '@assma/compiler'
+import { compile } from '@assmajs/compiler'
 ```
 
 ## API

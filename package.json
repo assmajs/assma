@@ -17,7 +17,7 @@
 		"root": true
 	},
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com"
+		"@assmajs:registry": "https://npm.pkg.github.com"
 	},
 	"scripts": {
 		"build": "node scripts/build.js",

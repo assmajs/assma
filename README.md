@@ -4,12 +4,13 @@
 
 <p align="center">🐼 A minimal JavaScript framework designed for educational purposes.</p>
 <p align="center">
-
+	<img src="https://github.com/assmajs/assma/actions/workflows/main.yml/badge.svg" href="https://github.com/assmajs/assma/actions/workflows/main.yml" alt="CI Build" />
+	<img src="https://github.com/assmajs/assma/actions/workflows/gpr-publish.yml/badge.svg" href="https://github.com/assmajs/assma/actions/workflows/gpr-publish.yml" alt="GPR Publish" />
 </p>
 
 ## Description
 
-Assma.js is designed to be a minimal framework for educational purposes that has the particularity to support creating efficient and scalable Jamstack applications on the web instead of SPAs. It's built with modern JavaScript (ES2015, ES2016, ES2017, ES2018, ES2019, ES2020).
+Assma.js is designed to be a minimal framework for educational purposes that has the particularity to support creating efficient and scalable Jamstack applications on the web instead of SPAs.
 
 ## Resources
 
@@ -28,7 +29,7 @@ For questions and support please use the official [Slack channel]().
 
 ## Issues
 
-Please make sure to read the [Issue Reporting Checklist](https://github.com/assmajs/nest/blob/master/CONTRIBUTING.md#-submitting-an-issue) before opening an issue.
+Please make sure to read the [Issue Reporting Checklist](https://github.com/assmajs/assma/blob/master/CONTRIBUTING.md#-submitting-an-issue) before opening an issue.
 
 ## Support
 
