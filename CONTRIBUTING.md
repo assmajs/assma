@@ -12,3 +12,7 @@ Please explore the issue tracker before submitting an issue; an issue for your p
 We want to fix all of the issues as fast as possible, but we need to reproduce and validate each one first.
 We will require you to submit a basic reproduction scenario using a repository or [Gist](https://gist.github.com/) in order to reproduce errors.
 Having a live, reproducible scenario allows us to get a variety of useful information without having to contact you with extra questions.
+
+[Todo: Coding Style](https://github.com/assmajs/assma/projects/1#card-81438654)
+
+[Todo: Pull Requests](https://github.com/assmajs/assma/projects/1#card-81438614)
