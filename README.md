@@ -28,7 +28,7 @@ Want to discover how Assma.js works under the hood ? take a look at these resour
 
 ## Questions
 
-Please use the official [Discord channel]() for queries and help.
+Please use the [Discussions space](https://github.com/assmajs/assma/discussions) for queries and help.
 
 ## Issues
 
