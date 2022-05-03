@@ -4,8 +4,11 @@
 
 <p align="center">🐼 A minimal JavaScript framework designed for educational purposes.</p>
 <p align="center">
-	<img src="https://github.com/assmajs/assma/actions/workflows/main.yml/badge.svg" href="https://github.com/assmajs/assma/actions/workflows/main.yml" alt="CI Build" />
-	<img src="https://github.com/assmajs/assma/actions/workflows/gpr-publish.yml/badge.svg" href="https://github.com/assmajs/assma/actions/workflows/gpr-publish.yml" alt="GPR Publish" />
+	<!-- <a href="" target="_blank"><img src="https://img.shields.io/npm/v/@assmajs/compiler.svg?registry_uri=https%3A%2F%2Fnpm.pkg.github.com" alt="NPM Version" /></a> -->
+	<a href="https://github.com/assmajs/assma" target="_blank"><img src="https://img.shields.io/github/license/assmajs/assma" alt="Package License" /></a>
+	<a href="https://github.com/assmajs/assma/actions/workflows/main.yml" target="_blank"><img src="https://github.com/assmajs/assma/actions/workflows/main.yml/badge.svg" alt="CI Build" /></a>
+	<a href="https://github.com/assmajs/assma/actions/workflows/gpr-publish.yml" target="_blank"><img src="https://github.com/assmajs/assma/actions/workflows/gpr-publish.yml/badge.svg" alt="GPR Publish" /></a>
+	<a href="https://twitter.com/assmajs" target="_blank"><img src="https://img.shields.io/twitter/follow/assmajs.svg?style=social&label=Follow"></a>
 </p>
 
 ## Description
@@ -21,24 +24,26 @@ Want to discover how Assma.js works under the hood ? take a look at these resour
 
 ## Getting started
 
-* To check out the [guide](https://assmajs.com/docs), visit [assmajs.com/docs](https://assmajs.com/docs).
+* Visit [assmajs.com/docs](https://assmajs.com/docs) to read the [guide](https://assmajs.com/docs).
 
 ## Questions
 
-For questions and support please use the official [Slack channel]().
+Please use the official [Discord channel]() for queries and help.
 
 ## Issues
 
-Please make sure to read the [Issue Reporting Checklist](https://github.com/assmajs/assma/blob/master/CONTRIBUTING.md#-submitting-an-issue) before opening an issue.
+Before reporting an issue, please read the [Submission Guidelines](https://github.com/assmajs/assma/blob/master/CONTRIBUTING.md#-submitting-an-issue).
 
 ## Support
 
-Assma is an MIT-licensed open source project. It can grow thanks your contributions. If you'd like to contribute, please [read more here](https://assmajs.com/support).
+Assma is an open source project with an MIT license.
+It has the potential to expand as a result of your contributions.
+Please learn more about how you can contribute [here](https://assmajs.com/support).
 
 ## Stay in touch
 
 * Author - [Sayf Essyd](https://twitter.com/sayfessyd)
-* Website - [https://www.assmajs.com](https://www.assmajs.com)
+* Website - [https://assmajs.com](https://assmajs.com)
 * Twitter - [@assmajs](https://twitter.com/assmajs)
 
 ## License
