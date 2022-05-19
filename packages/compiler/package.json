@@ -18,7 +18,7 @@
 	"bugs": {
 		"url": "https://github.com/assmajs/assma/issues"
 	},
-	"homepage": "https://github.com/assmajs/assma/tree/master/packages/compiler#readme",
+	"homepage": "https://github.com/assmajs/assma/tree/develop/packages/compiler#readme",
 	"peerDependencies": {},
 	"publishConfig": {
 		"@assmajs:registry": "https://npm.pkg.github.com"

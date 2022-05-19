@@ -3,7 +3,7 @@
  * Copyright Assma All Rights Reserved.
  *
  * Use of this source code is governed by an MIT license that can be
- * found in the LICENSE file at https://github.com/assmajs/assma/blob/master/LICENSE
+ * found in the LICENSE file at https://github.com/assmajs/assma/blob/develop/LICENSE
  */
 
 import config from './config';
@@ -35,9 +35,9 @@ export class ProducerException {
 
 export class NotAsExpected {
 	/**
-	 * A constructor for ProducerException class.
+	 * A constructor for NotAsExpected class.
 	 *
-	 * @param {string} message Message of the exception.
+	 * @param {string} expected Expected value.
 	 * @param {int} cursor Cursor.
 	 */
 	constructor(expected, cursor) {
