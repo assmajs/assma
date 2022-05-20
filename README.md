@@ -26,6 +26,8 @@ Want to discover how Assma.js works under the hood ? take a look at these resour
 
 * Visit [assmajs.com/docs](https://assmajs.com/docs) to read the [guide](https://assmajs.com/docs).
 
+[Todo: Doc Section](https://github.com/assmajs/assmajs.com/projects/1#card-82209761)
+
 ## Questions
 
 Please use the [Discussions space](https://github.com/assmajs/assma/discussions) for queries and help.
@@ -40,9 +42,11 @@ Assma is an open source project with an MIT license.
 It has the potential to expand as a result of your contributions.
 Please learn more about how you can contribute [here](https://assmajs.com/support).
 
+[Todo: Support Section](https://github.com/assmajs/assmajs.com/projects/1#card-82209769)
+
 ## Stay in touch
 
-* Author - [Sayf Essyd](https://twitter.com/sayfessyd)
+* Author - [Sayf Essyd](https://indieweb.social/@sayfessyd)
 * Website - [https://assmajs.com](https://assmajs.com)
 * Twitter - [@assmajs](https://twitter.com/assmajs)
 
