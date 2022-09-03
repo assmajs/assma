@@ -19,7 +19,7 @@ Assma.js is designed to be a minimal framework for educational purposes that has
 
 Want to discover how Assma.js works under the hood ? take a look at these resources:
 - A [series](https://medium.com/javascript-in-plain-english/want-to-discover-how-javascript-frameworks-work-behind-the-scenes-bc93cf602b83) of articles having as title "Want to Discover How JavaScript Frameworks Work Behind the Scenes?"
-- A [mini-course](https://www.educative.io/collection/5610092801556480/6058124596740096) having as title "Discover: JavaScript Frameworks Behind the Scenes"
+- A [mini-course](https://www.educative.io/courses/discover-javascript-frameworks-behind-scenes) having as title "Discover: JavaScript Frameworks Behind the Scenes"
 - An upcoming [book](https://www.producthunt.com/upcoming/assma-js)
 
 ## Getting started
